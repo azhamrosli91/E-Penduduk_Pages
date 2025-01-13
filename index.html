@@ -1,0 +1,394 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Penduduk - Sistem Pengurusan Komuniti</title>
+    <meta name="description" content="Sistem E-Penduduk memudahkan pengurusan komuniti termasuk maklumat penduduk, program, khairat kematian, asnaf, pembayaran komuniti, dan sumbangan.">
+    <meta name="keywords" content="E-Penduduk, pengurusan komuniti, khairat kematian, asnaf, sistem komuniti, program komuniti">
+    <meta name="author" content="Your Name or Organization">
+    <meta property="og:title" content="E-Penduduk - Sistem Pengurusan Komuniti">
+    <meta property="og:description" content="Sistem ini memudahkan pengurusan komuniti seperti maklumat penduduk, program, khairat kematian, dan sumbangan.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://ependuduk.com">
+    <meta name="twitter:card" content="summary_large_image">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="~/css/site.css"  />
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "E-Penduduk",
+          "url": "https://ependuduk.com",
+          "description": "Sistem E-Penduduk memudahkan pengurusan komuniti termasuk maklumat penduduk, program, khairat kematian, asnaf, pembayaran komuniti, dan sumbangan.",
+          "potentialAction": {
+            "@@type": "SearchAction",
+            "target": "https://ependuduk.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+    </script>
+
+</head>
+<body>
+    <header class="w-100">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/Max_Logo.png" alt="E-Penduduk Logo" style="height: 40px; margin-right: 10px;"> E-Penduduk
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#landingPage" id="link-landingPage">Laman Utama</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fungsi" id="link-fungsi">Fungsi Tersedia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#review" id="link-review">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq" id="link-faq">Soalan Lazim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hubungi" id="link-hubungi">Hubungi Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sumbangan" id="link-sumbangan">Sumbangan</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-primary ms-3" href="https://e-penduduk.azurewebsites.net/Home/Login" role="button">Cuba Sekarang</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            <div class="container-fluid vh-100 position-relative">
+                <video autoplay muted loop class="w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover; opacity: 0.6; display: none;" id="bgVideo">
+                    <source src="images/lanpage2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="landingPage" class="container vh-100 d-flex flex-column justify-content-center align-items-center text-center mt-5 position-relative">
+                    <div class="row w-100">
+
+                        <div class="col-md-12 d-flex flex-column justify-content-center" style="background-color: rgba(255, 255, 255, 0.8); padding: 10px 15px; border-radius: 10px;">
+                            <h1 class="display-3 text-primary fw-bold mb-4">Selamat Datang ke Sistem <span style="white-space: nowrap;">E-Penduduk</span></h1>
+                            <p class="lead mb-4">Sistem ini direka khas untuk memudahkan komuniti dalam menguruskan maklumat penduduk, khairat kematian, golongan asnaf, pembayaran komuniti, program, serta sumbangan. Dengan sistem ini, pengurusan komuniti anda akan menjadi lebih sistematik dan teratur.</p>
+                            <p><a class="btn btn-primary btn-lg grow-on-hover" href="https://e-penduduk.azurewebsites.net/Home/Login">Cuba Sekarang</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="fungsi" class="container-fluid" style="padding: 20px; border-radius: 10px;">
+                <div class="container mt-5">
+                    <div class="row mt-5">
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold">Laman Utama</h3>
+                            <p>Modul Maklumat Program menyediakan kemudahan untuk menguruskan pelbagai aktiviti komuniti seperti ceramah, majlis, dan program kebajikan. Fungsi ini memudahkan pentadbiran dalam merancang, memantau, dan merekod penyertaan serta kejayaan setiap program yang dijalankan.</p>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <img src="images/dashboard.png" alt="Menu Utama" class="img-fluid" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="padding: 20px; border-radius: 10px;">
+                <div class="container mt-5">
+                    <div class="row mt-5">
+                        <div class="col-md-6">
+                            <img src="images/penduduk.png" alt="Maklumat Penduduk" class="img-fluid" loading="lazy" />
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold">Maklumat Penduduk</h3>
+                            <p>Modul Maklumat Penduduk menyediakan kemudahan kepada pentadbir komuniti untuk menguruskan data ahli komuniti dengan lebih cekap. Data ini termasuk maklumat peribadi, status keahlian, dan maklumat khas seperti kategori penduduk (asnaf, khairat kematian). Fungsi carian dan penapisan data turut disediakan untuk memudahkan pengurusan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="background-color: #dbeafe; padding: 20px; border-radius: 10px;">
+                <div class="container mt-5">
+                    <div class="row mt-5">
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold">Maklumat Program</h3>
+                            <p>Modul Maklumat Program menyediakan kemudahan untuk menguruskan pelbagai aktiviti komuniti seperti ceramah, majlis, dan program kebajikan. Fungsi ini memudahkan pentadbiran dalam merancang, memantau, dan merekod penyertaan serta kejayaan setiap program yang dijalankan.</p>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <img src="images/program.webp" alt="Maklumat Program" class="img-fluid" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="review" class="container-fluid" style="background-color: #f0f8ff; padding: 20px; border-radius: 10px;">
+                <div class="container mt-5">
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <h3 class="fw-bold text-center">Maklumat Review</h3>
+                            <p class="text-center">Modul Maklumat Review menyediakan kemudahan untuk penduduk memberikan maklum balas mengenai pelbagai aspek komuniti dan program yang dijalankan. Fungsi ini membantu pentadbiran mendapatkan pandangan dan cadangan bagi penambahbaikan komuniti.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title">Muhammad Faizal Bin Juhari</h5>
+                                    <p class="card-text">"Sistem ini sangat membantu dalam menguruskan komuniti kami dengan lebih baik. Tahniah kepada pasukan yang membangunkan sistem ini!"</p>
+                                    <div class="text-warning">
+                                        <span class="running-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- 4-star rating -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nur Alia Binti Ismail</h5>
+                                    <p class="card-text">"Saya suka dengan fungsi review ini kerana kami dapat memberikan maklum balas secara langsung."</p>
+                                    <div class="text-warning">
+                                        <span class="running-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <!-- 5-star rating -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mohd Yusuf Bin Manap</h5>
+                                    <p class="card-text">"Fungsi program dan pembayaran sangat berguna. Banyak yang boleh diperbaiki lagi, tetapi keseluruhan sangat memuaskan."</p>
+                                    <div class="text-warning">
+                                        <span class="running-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- 4-star rating -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="faq" class="container-fluid" style="background-color: #e8f1fe; padding: 20px; border-radius: 10px;">
+                <div class="container mt-5">
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <h3 class="fw-bold text-center">Soalan Lazim (FAQ)</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-4">
+                            <div class="card shadow grow-on-hover">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bagaimana cara untuk mendaftar dalam sistem ini?</h5>
+                                    <p class="card-text">Anda boleh mendaftar dengan klik pada butang "Daftar" di halaman utama dan mengisi maklumat yang diperlukan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card shadow grow-on-hover">
+                                <div class="card-body">
+                                    <h5 class="card-title">Siapa yang boleh menggunakan sistem ini?</h5>
+                                    <p class="card-text">Sistem ini direka untuk digunakan oleh pentadbir and ahli komuniti serta penduduk yang berdaftar dalam komuniti tersebut.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-4">
+                            <div class="card shadow grow-on-hover">
+                                <div class="card-body">
+                                    <h5 class="card-title">Adakah maklumat saya selamat dalam sistem ini?</h5>
+                                    <p class="card-text">Ya, keselamatan maklumat anda adalah keutamaan kami. Semua data disimpan dengan selamat dan hanya boleh diakses oleh pihak yang diberi kuasa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card shadow grow-on-hover">
+                                <div class="card-body">
+                                    <h5 class="card-title">Adakah sistem ini Percuma?</h5>
+                                    <p class="card-text">Ya, Sistem ialah percuma untuk digunakan oleh semua dengan tertakluk kepada terma dan syarat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hubungi" class="container-fluid" style="background-color: #f7faff; padding: 20px; border-radius: 10px;">
+                <div class="container mt-5">
+                    <div class="row mt-5">
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold" style="font-size: 2rem;">Hubungi Kami</h3>
+                            <p style="font-size: 1.25rem;">Jika anda mempunyai sebarang pertanyaan atau memerlukan bantuan, sila hubungi kami melalui maklumat berikut:</p>
+                            <p style="font-size: 1.25rem;"><strong>Email:</strong> <a href="mailto:azragreen.team.outlook.com" class="text-decoration-none">azragreen.outlook.com</a></p>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <img src="images/contactus.webp" alt="Hubungi Kami" class="img-fluid rounded shadow" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sumbangan" class="container-fluid" style="background-color: #e8f5e9; padding: 20px; border-radius: 10px; margin-top: 30px;">
+                <div class="container mt-5">
+                    <div class="row mt-5">
+                        <div class="col-md-8 d-flex flex-column justify-content-center align-items-center text-center">
+                            <h3 class="fw-bold" style="font-size: 2rem;">Sumbangan</h3>
+                            <p style="font-size: 1.25rem;">Sokongan anda sangat bermakna bagi kami. Dengan memberikan sumbangan, anda membantu kami mengekalkan dan menambah baik sistem ini untuk kegunaan komuniti. Terima kasih atas keprihatinan dan sokongan anda!</p>
+                            <p style="font-size: 1.25rem;">Sila hubungi kami selepas membuat sumbangan untuk pengesahan. Terima kasih!</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="images/duitnow.jpg" alt="QR Code Payment" class="img-fluid rounded shadow" style="max-width: 250px;" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .running-stars {
+                    display: inline-block;
+                    animation: running-scale 2s infinite;
+                }
+
+                @@keyframes running-scale {
+                    0%, 100% {
+                        transform: scale(1);
+                    }
+
+                    20% {
+                        transform: scale(1.2);
+                    }
+
+                    40% {
+                        transform: scale(1);
+                    }
+
+                    60% {
+                        transform: scale(1.2);
+                    }
+
+                    80% {
+                        transform: scale(1);
+                    }
+                }
+
+                img {
+                    max-height: 400px;
+                    object-fit: cover;
+                    opacity: 0;
+                    transform: scale(0.9); /* Initial small size */
+                    transition: opacity 1.5s ease-in-out;
+                }
+
+                .grow-on-hover {
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                    .grow-on-hover:hover {
+                        transform: scale(1.1);
+                    }
+
+                .fade-in {
+                    opacity: 1 !important;
+                    transform: scale(1); /* Back to original size */
+                    transition: opacity 1.5s ease-in-out 0.2s, transform 0.8s ease-in-out 0.5s; /* Delay of 500ms */
+                }
+
+                .card {
+                    border-radius: 10px;
+                }
+
+                .nav-link {
+                    padding: 8px 15px;
+                    border-radius: 5px;
+                    transition: background-color 0.3s, color 0.3s;
+                }
+
+                    .nav-link.active {
+                        background-color: #007bff;
+                        color: white !important;
+                        font-weight: bold;
+                        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+                    }
+
+                    .nav-link:hover {
+                        background-color: rgba(0, 123, 255, 0.1);
+                    }
+            </style>
+            <script>
+                function fadeInImages() {
+                    const images = document.querySelectorAll('img');
+                    images.forEach(img => {
+                        const rect = img.getBoundingClientRect();
+                        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                            img.classList.add('fade-in');
+                        }
+                    });
+                }
+
+                document.addEventListener('scroll', fadeInImages);
+                window.addEventListener('load', fadeInImages); // Trigger on page load
+
+                const video = document.getElementById('bgVideo');
+                video.addEventListener('canplay', () => {
+                    video.style.display = 'block';
+                    video.style.opacity = 0;
+                    setTimeout(() => {
+                        video.style.transition = 'opacity 1.5s ease';
+                        video.style.opacity = 0.6;
+                    }, 100);
+                });
+            </script>
+
+            <script>
+
+                // Function to highlight the active menu based on scroll position
+                document.addEventListener('scroll', function () {
+                    const sections = [
+                        { id: 'landingPage', link: 'link-landingPage' },
+                        { id: 'fungsi', link: 'link-fungsi' },
+                        { id: 'review', link: 'link-review' },
+                        { id: 'faq', link: 'link-faq' },
+                        { id: 'hubungi', link: 'link-hubungi' },
+                        { id: 'sumbangan', link: 'link-sumbangan' }
+                    ];
+
+                    let currentSection = '';
+                    sections.forEach(section => {
+                        const element = document.getElementById(section.id);
+                        if (element && element.getBoundingClientRect().top <= 50) {
+                            currentSection = section.link;
+                        }
+                    });
+
+                    sections.forEach(section => {
+                        document.getElementById(section.link).classList.remove('active');
+                    });
+
+                    if (currentSection) {
+                        document.getElementById(currentSection).classList.add('active');
+                    }
+                });
+            </script>
+
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - E-Penduduk - Terma dan Syarat</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+</html>
